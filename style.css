@@ -679,6 +679,20 @@ footer span a:hover{
     }
 }
 
+.highlight{
+    font-weight: 600;
+    color: blackblue;
+    background-color: rgb(243, 241, 217);
+    border-radius: 13px;
+    padding: 3px;
+
+    /* text-decoration: underline; */
+}
+
+.highlight :hover{
+    font-weight: 800;
+    background-color: khaki;
+}
 
 
 /* ----------------------- FLOATING SOCIAL MEDIA ICONS ---------------------- */
@@ -788,3 +802,5 @@ footer span a:hover{
 	background-color: #0f9b26;
 }
 /* ----------------------------------- *** ---------------------------------- */
+
+
