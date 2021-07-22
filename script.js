@@ -35,7 +35,7 @@ $(document).ready(function(){
 
     // typing text animation script
     var typed = new Typed(".typing", {
-        strings: ["Competitive Programmer", "5⭐ rated coder @Codechef","🥇(Gold Badge) in Problm Solving @HackerRank", "Full Stack Web Developer", "YouTuber",  "Freelancer"],
+        strings: ["Competitive Programmer", "5⭐ rated coder @Codechef", "🥇(Gold Badge) in Problm Solving @HackerRank","Full Stack Web Developer", "YouTuber",  "Freelancer"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
@@ -53,18 +53,18 @@ $(document).ready(function(){
         margin: 20,
         loop: true,
         autoplay: true,
-        autoplayTimeOut: 50,
+        autoplayTimeOut: 2000,
         autoplayHoverPause: true,
         responsive: {
             0:{
                 items: 1,
                 nav: false
             },
-            100:{
+            600:{
                 items: 2,
                 nav: false
             },
-            200:{
+            1000:{
                 items: 3,
                 nav: false
             }

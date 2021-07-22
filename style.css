@@ -35,11 +35,11 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .services, .skills, .projects, .contact, footer{
+.about, .education, .skills, .projects, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
-.services .serv-content,
+.education .serv-content,
 .skills .skills-content,
 .contact .contact-content{
     display: flex;
@@ -257,21 +257,21 @@ section .title::after{
     background: none;
 }
 
-/* services section styling */
-.services, .projects{
+/* education section styling */
+.education, .projects{
     color:#fff;
     background: #111;
 }
-.services .title::before,
+.education .title::before,
 .projects .title::before{
     background: #fff;
 }
-.services .title::after,
+.education .title::after,
 .projects .title::after{
     background: #111;
-    content: "what i provide";
+    content: "where i study";
 }
-.services .serv-content .card{
+.education .serv-content .card{
     width: calc(33% - 20px);
     background: #222;
     text-align: center;
@@ -280,24 +280,24 @@ section .title::after{
     cursor: pointer;
     transition: all 0.3s ease;
 }
-.services .serv-content .card:hover{
+.education .serv-content .card:hover{
     background: crimson;
 }
-.services .serv-content .card .box{
+.education .serv-content .card .box{
     transition: all 0.3s ease;
 }
-.services .serv-content .card:hover .box{
+.education .serv-content .card:hover .box{
     transform: scale(1.05);
 }
-.services .serv-content .card i{
+.education .serv-content .card i{
     font-size: 50px;
     color: crimson;
     transition: color 0.3s ease;
 }
-.services .serv-content .card:hover i{
+.education .serv-content .card:hover i{
     color: #fff;
 }
-.services .serv-content .card .text{
+.education .serv-content .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
@@ -380,7 +380,7 @@ section .title::after{
 
 /* projects section styling */
 .projects .title::after{
-    content: "what i made";
+    content: "who with me";
 }
 .projects .carousel .card{
     background: #222;
@@ -487,7 +487,7 @@ section .title::after{
     margin-bottom: 15px;
 }
 .contact .right form .textarea{
-    height: 80px;
+    height: 180px;
     width: 100%;
 }
 .contact .right form .name{
@@ -497,7 +497,7 @@ section .title::after{
 .contact .right form .textarea textarea{
     height: 100%;
     width: 100%;
-    border: 1px solid lightgrey;
+    border: 1.5px solid lightgrey;
     border-radius: 6px;
     outline: none;
     padding: 0 15px;
@@ -507,7 +507,9 @@ section .title::after{
 }
 .contact .right form .field input:focus,
 .contact .right form .textarea textarea:focus{
-    border-color: #b3b3b3;
+    border-color: red;
+    border-block-start: 2px solid red;
+
 }
 .contact .right form .textarea textarea{
   padding-top: 10px;
@@ -551,6 +553,19 @@ footer span a:hover{
     text-decoration: underline;
 }
 
+/* -------------------- text-highlight for about section -------------------- */
+.highlight{
+    font-weight: 600;
+    color: blackblue;
+    background-color: rgb(243, 241, 217);
+    border-radius: 13px;
+    padding: 3px;
+}
+
+/* -------------------- for hover-effect in contact form -------------------- */
+.hover-effect:hover{
+    font-weight: 600;
+}
 
 /* responsive media query start */
 @media (max-width: 1104px) {
@@ -619,7 +634,7 @@ footer span a:hover{
     .about .about-content .right{
         flex: 100%;
     }
-    .services .serv-content .card{
+    .education .serv-content .card{
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
@@ -643,7 +658,7 @@ footer span a:hover{
     .home .home-content a{
         font-size: 20px;
     }
-    .services .serv-content .card{
+    .education .serv-content .card{
         width: 100%;
     }
 }
@@ -678,129 +693,5 @@ footer span a:hover{
         line-height: 38px;
     }
 }
-
-.highlight{
-    font-weight: 600;
-    color: blackblue;
-    background-color: rgb(243, 241, 217);
-    border-radius: 13px;
-    padding: 3px;
-
-    /* text-decoration: underline; */
-}
-
-.highlight :hover{
-    font-weight: 800;
-    background-color: khaki;
-}
-
-
-/* ----------------------- FLOATING SOCIAL MEDIA ICONS ---------------------- */
-
-.floating-social-icon
-{
-	position: fixed;
-	top: 50%;
-	transform: translateY(-50%);
-	left: 0;
-}
-.floating-social-icon a
-{
-	display: block;
-	color: #fff;
-	text-decoration: none;
-	font-family: 'Montserrat';
-	font-weight: 500;
-	text-transform: uppercase;
-	margin-bottom: 8px;
-}
-
-.floating-social-icon a .icon
-{
-	width: 40px;
-	height: 40px;
-	display: inline-block;
-	background-color: #333;
-	text-align: center;
-}
-
-.floating-social-icon a .icon .fa
-{
-	line-height: 40px;
-}
-
-.floating-social-icon a .text
-{
-	display: inline-block;
-	font-size: 14px;
-	background-color: #333;
-	height: 40px;
-	padding: 0 15px;
-	opacity: 0;
-	visibility: hidden;
-	position: relative;
-	left: 15px;
-	transition: left .2s linear;
-	line-height: 40px;
-}
-
-.floating-social-icon a:hover .text
-{
-	left: 25px;
-	opacity: 1;
-	visibility: visible;
-}
-
-.floating-social-icon a .text:before
-{
-	content: '';
-	position: absolute;
-	width: 15px;
-	height: 15px;
-	left: -8px;
-	top: 50%;
-	transform: translateY(-50%) rotate(45deg);
-	background-color: #333;
-}
-
-
-.floating-social-icon a:nth-child(1) .text,
-.floating-social-icon a:nth-child(1) .icon,
-.floating-social-icon a:nth-child(1) .text:before
-{
-	background-color: #4966ab;
-}
-
-.floating-social-icon a:nth-child(2) .text,
-.floating-social-icon a:nth-child(2) .icon,
-.floating-social-icon a:nth-child(2) .text:before
-{
-	background-color: #35abda;
-}
-.floating-social-icon a:nth-child(3) .text,
-.floating-social-icon a:nth-child(3) .icon,
-.floating-social-icon a:nth-child(3) .text:before
-{
-	background-color: #9d3d8c;
-}
-.floating-social-icon a:nth-child(4) .text,
-.floating-social-icon a:nth-child(4) .icon,
-.floating-social-icon a:nth-child(4) .text:before
-{
-	background-color: #0c6fae;
-}
-.floating-social-icon a:nth-child(5) .text,
-.floating-social-icon a:nth-child(5) .icon,
-.floating-social-icon a:nth-child(5) .text:before
-{
-	background-color: #e13d38;
-}
-.floating-social-icon a:nth-child(6) .text,
-.floating-social-icon a:nth-child(6) .icon,
-.floating-social-icon a:nth-child(6) .text:before
-{
-	background-color: #0f9b26;
-}
-/* ----------------------------------- *** ---------------------------------- */
 
 
