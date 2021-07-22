@@ -166,7 +166,8 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
-    background: url("images/banner.jpg") no-repeat center;
+    background: url("./images/banner-final.jpg") no-repeat center;
+    backdrop-filter: blur(35px);
     height: 100vh;
     color: #fff;
     min-height: 500px;
