@@ -274,6 +274,14 @@ section .title::after{
     background: #111;
     content: "where i study";
 }
+
+
+.achievement .title::after{
+    background: #111;
+    content: "what i achieved";
+}
+
+
 .education .serv-content .card{
     width: calc(33% - 20px);
     background: #222;
@@ -426,7 +434,7 @@ section .title::after{
 
 /* projects section styling */
 .projects .title::after{
-    content: "who with me";
+    content: "what i made";
 }
 .projects .carousel .card{
     background: #222;
@@ -611,6 +619,10 @@ footer span a:hover{
 /* -------------------- for hover-effect in contact form -------------------- */
 .hover-effect:hover{
     font-weight: 600;
+}
+
+.letter-space{
+    letter-spacing: 0.1em;
 }
 
 
