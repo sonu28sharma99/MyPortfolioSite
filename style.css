@@ -628,6 +628,13 @@ footer span a:hover{
 }
 
 
+.skills p{
+    color: rgb(134, 126, 128);
+    font-weight: 500;
+}
+
+
+
 /* responsive media query start */
 @media (max-width: 1104px) {
     .about .about-content .left img{
