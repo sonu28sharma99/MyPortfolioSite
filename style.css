@@ -634,6 +634,129 @@ footer span a:hover{
 }
 
 
+/* ------------------------ social media icon widgets ----------------------- */
+
+.floating-social-icon
+{
+	position: fixed;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0;
+}
+.floating-social-icon a
+{
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	font-family: 'Montserrat';
+	font-weight: 500;
+	text-transform: uppercase;
+	margin-bottom: 8px;
+}
+
+.floating-social-icon a .icon
+{
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	background-color: #333;
+	text-align: center;
+}
+
+.floating-social-icon a .icon .fa
+{
+	line-height: 40px;
+}
+
+.floating-social-icon a .text
+{
+	display: inline-block;
+	font-size: 14px;
+	background-color: #333;
+	height: 40px;
+	padding: 0 15px;
+	opacity: 0;
+	visibility: hidden;
+	position: relative;
+	left: 15px;
+	transition: left .2s linear;
+	line-height: 40px;
+}
+
+.floating-social-icon a:hover .text
+{
+	left: 25px;
+	opacity: 1;
+	visibility: visible;
+}
+
+.floating-social-icon a .text:before
+{
+	content: '';
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	left: -8px;
+	top: 50%;
+	transform: translateY(-50%) rotate(45deg);
+	background-color: #333;
+}
+
+
+.floating-social-icon a:nth-child(1) .text,
+.floating-social-icon a:nth-child(1) .icon,
+.floating-social-icon a:nth-child(1) .text:before
+{
+	background-color: #0088cc;
+}
+
+.floating-social-icon a:nth-child(6) .text,
+.floating-social-icon a:nth-child(6) .icon,
+.floating-social-icon a:nth-child(6) .text:before
+{
+	background-color: #FF0000;
+	;
+}
+.floating-social-icon a:nth-child(3) .text,
+.floating-social-icon a:nth-child(3) .icon,
+.floating-social-icon a:nth-child(3) .text:before
+{
+	background-color: #9d3d8c;
+}
+.floating-social-icon a:nth-child(2) .text,
+.floating-social-icon a:nth-child(2) .icon,
+.floating-social-icon a:nth-child(2) .text:before
+{
+	background-color: #0c6fae;
+}
+.floating-social-icon a:nth-child(5) .text,
+.floating-social-icon a:nth-child(5) .icon,
+.floating-social-icon a:nth-child(5) .text:before
+{
+	background-color:  #bc2a8d;
+}
+.floating-social-icon a:nth-child(3) .text,
+.floating-social-icon a:nth-child(3) .icon,
+.floating-social-icon a:nth-child(3) .text:before
+{
+	background-color: #14dc5c;;
+}
+
+
+.floating-social-icon{
+	display: none;
+}
+
+
+@media only screen and (min-width: 992px){
+	.floating-social-icon{
+		display: block;
+	}
+}
+
+/* ----------------------------------- end ---------------------------------- */
+
+
 
 /* responsive media query start */
 @media (max-width: 1104px) {
