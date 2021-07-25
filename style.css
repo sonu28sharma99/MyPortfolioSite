@@ -418,18 +418,22 @@ section .title::after{
     background: crimson;
 }
 .skills-content .right .html::before{
-    width: 90%;
+    width: 94%;
 }
 .skills-content .right .css::before{
-    width: 60%;
+    width: 90%;
 }
 .skills-content .right .js::before{
     width: 80%;
 }
 .skills-content .right .php::before{
-    width: 50%;
+    width: 75%;
 }
 .skills-content .right .mysql::before{
+    width: 70%;
+}
+
+.skills-content .right .nodejs::before{
     width: 70%;
 }
 
