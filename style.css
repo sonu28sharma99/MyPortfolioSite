@@ -612,6 +612,17 @@ footer span a:hover{
     text-decoration: underline;
 }
 
+/* Project Hyperlink */
+.project-link{
+    font-weight: 600; 
+    letter-spacing: 1px; 
+    text-align: center;
+}
+
+.anchor-tag{
+    color: yellow;
+}
+
 /* -------------------- text-highlight for about section -------------------- */
 .highlight{
     font-weight: 600;
